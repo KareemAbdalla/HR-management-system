@@ -17,10 +17,6 @@
   
   }
 
-
-
-
-
 function Employee(Id, Name, dep, lev) {
   this.employeeId = Id;
   this.fullName = Name;
@@ -29,8 +25,7 @@ function Employee(Id, Name, dep, lev) {
   return true;
 }
 
-
-
+console.log(AutoGenerate());
 
 const firstEmployee = new Employee("1000", "Ghazi Samer", "Administration", "Senior");
 const secEmployee = new Employee("1001", "Lana Ali", "Finance", "Senior");
@@ -52,20 +47,9 @@ const seventhEmployee = new Employee("1006", "Hadi Ahmad", "Administration", "Mi
   document.getElementById("sixthseventhEmployeeEmployee").innerHTML ="EmployeeId :" + seventhEmployee.employeeId + ", " + "Employee Name :" + seventhEmployee.fullName + ", " + "Department :" + seventhEmployee.departement+ ", " + "Employee Level :" + seventhEmployee.level + ", "; 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  function AutoGenerate(){
+    var val = Math.floor(1000 + Math.random() * 9000);
+    return(val);
+  } 
+ 
+  
